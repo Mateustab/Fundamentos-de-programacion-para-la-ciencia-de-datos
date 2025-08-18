@@ -1,2 +1,2 @@
-# Fundamentos-de-programacion-para-la-ciencia-de-datos
+# Fundamentos_de_programacion_para_la_ciencia_de_datos
 Muestra todo el desarrollo del curso
