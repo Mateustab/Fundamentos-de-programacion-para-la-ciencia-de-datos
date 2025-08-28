@@ -1,7 +1,3 @@
-# Taller 01
-
-### Todos los ejercicios fueron corridos en HackerRank y pasaron todos los test
-
 ## Nombre: Andrés Mateus Taborda Florez
 ## Documento: ******4480
 ## email: mateus.taborda@udea.edu.co
