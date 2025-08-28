@@ -136,7 +136,36 @@ def test_funciones_matrix():
         print(f"✗ Error en funciones de matriz: {e}")
 
 
-
+def test_matrices_especiales():
+    """Pruebas para funciones de creación de matrices."""
+    print("\nProbando matrices especiales...")
+    
+    try:
+        from linAlg import identity_matrix, zeros_matrix, ones_matrix
+        
+        # Test matriz identidad
+        try:
+            I = identity_matrix(3)
+            print(f"✓ Matriz identidad 3x3:\n{I}")
+        except:
+            print("✗ identity_matrix no implementado")
+        
+        # Test matriz de ceros
+        try:
+            zeros = zeros_matrix(2, 3)
+            print(f"✓ Matriz de ceros 2x3:\n{zeros}")
+        except:
+            print("✗ zeros_matrix no implementado")
+        
+        # Test matriz de unos
+        try:
+            ones = ones_matrix(2, 2)
+            print(f"✓ Matriz de unos 2x2:\n{ones}")
+        except:
+            print("✗ ones_matrix no implementado")
+            
+    except Exception as e:
+        print(f"✗ Error en matrices especiales: {e}")
 
 
 def ejecutar_todas_las_pruebas():
@@ -149,7 +178,7 @@ def ejecutar_todas_las_pruebas():
     test_matrix_basico()
     test_funciones_vector()
     test_funciones_matrix()
-    #test_matrices_especiales()
+    test_matrices_especiales()
     
     print("\n" + "=" * 60)
     print("PRUEBAS COMPLETADAS")

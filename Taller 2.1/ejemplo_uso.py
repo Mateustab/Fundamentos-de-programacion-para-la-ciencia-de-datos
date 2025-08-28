@@ -12,7 +12,7 @@ y devolverán errores hasta que los estudiantes las completen.
 from linAlg import Vector, Matrix
 from linAlg import dot_product, magnitude, normalize, cross_product, angle_between
 from linAlg import scale, add, subtract, vector_multiply, matrix_multiply
-from linAlg import transpose, determinant, inverse
+from linAlg import transpose, determinant, inverse, identity_matrix, zeros_matrix, ones_matrix
 
 def ejemplo_vectores():
     """Ejemplos de uso de la clase Vector."""
@@ -84,7 +84,21 @@ def ejemplo_matrices():
     print(f"Multiplicación matriz-vector (función):\n{vector_multiply(m1, v)}")
     print(f"Multiplicación matriz-matriz (función):\n{matrix_multiply(m1, m2)}")
 
-
+def ejemplo_matrices_especiales():
+    """Ejemplos de creación de matrices especiales."""
+    print("\n=== MATRICES ESPECIALES ===")
+    
+    # Matriz identidad
+    I = identity_matrix(3)
+    print(f"Matriz identidad 3x3:\n{I}")
+    
+    # Matriz de ceros
+    zeros = zeros_matrix(2, 3)
+    print(f"Matriz de ceros 2x3:\n{zeros}")
+    
+    # Matriz de unos
+    ones = ones_matrix(3, 2)
+    print(f"Matriz de unos 3x2:\n{ones}")
 
     
     
@@ -97,6 +111,7 @@ if __name__ == "__main__":
     try:
         ejemplo_vectores()
         ejemplo_matrices()
+        ejemplo_matrices_especiales()
         
     except NotImplementedError:
         print("\n¡Las funciones aún no están implementadas!")
