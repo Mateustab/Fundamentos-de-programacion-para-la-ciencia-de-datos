@@ -346,8 +346,11 @@ class Matrix:
     @property
     def inverse(self) -> 'Matrix':
         """Calcula y retorna la matriz inversa."""
-        #return #(1/(self.determinant))  
-        return Matrix((get_cofactors_matrix(self.data)).T) * (1/(self.determinant))
+          
+        if self.is_square == False or self.determinant == 0:
+            raise TypeError("No se puede calcular la inversa de la matriz por que no es una matriz cuadrada o su determinante es cero")
+        else:
+            return Matrix((get_cofactors_matrix(self.data)).T) * (1/(self.determinant))
     
     def is_square(self) -> bool:
         """Verifica si la matriz es cuadrada."""
@@ -628,7 +631,9 @@ def determinant(matrix: Matrix) -> Union[int, float]:
     Returns:
         El determinante
     """
-    pass
+    if matrix.is_square == False:
+        raise TypeError("No se puede calcular el determinante de la matriz por que no es una matriz cuadrada") 
+    return matrix.determinant
 
 
 def inverse(matrix: Matrix) -> Matrix:
@@ -641,7 +646,11 @@ def inverse(matrix: Matrix) -> Matrix:
     Returns:
         Una nueva matriz inversa
     """
-    pass
+
+    if matrix.is_square == False or matrix.determinant == 0:
+        raise ValueError("No se puede calcular la inversa de la matriz por que no es una matriz cuadrada o su determinante es cero") 
+    else:
+        return matrix.inverse
 
 
 def identity_matrix(size: int) -> Matrix:
@@ -654,7 +663,19 @@ def identity_matrix(size: int) -> Matrix:
     Returns:
         Una nueva matriz identidad
     """
-    pass
+    f = []
+    c = []
+
+    for i in range(size):
+        for j in range(size):
+            if j == i:
+                c.append(1)
+            else:
+                c.append(0)
+           
+        f.append(c)
+        c = []
+    return (f)
 
 
 def zeros_matrix(rows: int, columns: int) -> Matrix:
@@ -668,7 +689,7 @@ def zeros_matrix(rows: int, columns: int) -> Matrix:
     Returns:
         Una nueva matriz llena de ceros
     """
-    pass
+    return Matrix(ones_matrix(rows, columns)) * 0
 
 
 def ones_matrix(rows: int, columns: int) -> Matrix:
@@ -682,7 +703,16 @@ def ones_matrix(rows: int, columns: int) -> Matrix:
     Returns:
         Una nueva matriz llena de unos
     """
-    pass
+    f = []
+    c = []
+
+    for i in range(rows):
+        for j in range(columns):
+            c.append(1)
+        f.append(c)
+        c = []
+    return (f)
+
 
 
 # Las siguientes funciones que no fueron solicitadas en el taller fueron obtenidas con ayuda de AI
