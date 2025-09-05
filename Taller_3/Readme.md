@@ -56,8 +56,8 @@ Recomendaciones prácticas basadas en las evidencias encontradas.
 ⚙️ Cómo Replicar el Análisis
 
 Instalar las Dependencias:
-Asegúrate de tener Python instalado. Luego, usa pip para instalar las librerías necesarias:
-pip install -r requirements.txt
+Clona el repositorio. Luego, usa pip para instalar las librerías necesarias en tu entorno:
+pip install -r requirements.txt 
 
 Ejecutar el Notebook:
-Abre Visual Studio Code (VSC) luego tu entorno virtual y ejecuta todas las celdas del archivo EDA - Students' Social Media Addiction.ipynb. El notebook está diseñado para ejecutarse de principio a fin sin errores, lo que te permitirá seguir el análisis paso a paso.
+Abre Visual Studio Code (VSC)  y ejecuta todas las celdas del archivo EDA - Students' Social Media Addiction.ipynb. El notebook está diseñado para ejecutarse de principio a fin sin errores, lo que te permitirá seguir el análisis paso a paso.
