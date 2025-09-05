@@ -3,12 +3,13 @@ Este proyecto es un análisis exploratorio de datos (EDA) que investiga la relac
 
 📂 Estructura del Repositorio
 
-Taller_3/
-├── EDA.ipynb
-├── .gitignore
-├── README.md
-├── requirements.txt
-└── Students Social Media Addiction.csv
+Taller_3/  
+├── EDA.ipynb  
+├── .gitignore  
+├── README.md  
+├── requirements.txt  
+└── Students Social Media Addiction.csv  
+
 Students Social Media Addiction.csv: El conjunto de datos principal utilizado para el estudio.
 
 EDA - Students' Social Media Addiction.ipynb: El Jupyter Notebook que contiene el análisis completo.
