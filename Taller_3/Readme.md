@@ -1,7 +1,15 @@
-Student's Social Media Addiction 
+# Student's Social Media Addiction 
 Este proyecto es un análisis exploratorio de datos (EDA) que investiga la relación entre el uso de las redes sociales, la adicción, la salud mental y los hábitos de sueño en estudiantes. El estudio se presenta en un único archivo de Jupyter Notebook que documenta todo el proceso, desde la preparación de los datos hasta las conclusiones finales.
 
 📂 Estructura del Repositorio
+
+Taller_3/  
+├── EDA.ipynb  
+├── .gitignore  
+├── README.md  
+├── requirements.txt  
+└── Students Social Media Addiction.csv  
+
 Students Social Media Addiction.csv: El conjunto de datos principal utilizado para el estudio.
 
 EDA - Students' Social Media Addiction.ipynb: El Jupyter Notebook que contiene el análisis completo.
