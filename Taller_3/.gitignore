@@ -1,0 +1,11 @@
+Plaintext
+
+# Archivos y carpetas del entorno virtual
+env/
+venv/
+
+# Archivos de caché y de sistema operativo
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
